@@ -11,7 +11,8 @@ const TRIGGER_VARIANTS = {
 export default function LoginButton({ variant = 'dark' }) {
   return (
     <AuthPopover
-      align={variant === 'light' ? 'left' : 'right'}
+      align="right"
+      openUp={variant === 'light'}
       trigger={({ toggle, open }) => (
         <button
           type="button"
@@ -26,7 +27,7 @@ export default function LoginButton({ variant = 'dark' }) {
       )}
     >
       {({ close }) => (
-        <div className="w-60 rounded-xl border border-gray-200 bg-white p-3 shadow-2xl">
+        <div className="w-56 rounded-xl border border-gray-200 bg-white p-3 shadow-2xl">
           <p className="mb-2 px-1 text-xs font-medium text-gray-500">
             Ingresá para guardar tu sesión
           </p>

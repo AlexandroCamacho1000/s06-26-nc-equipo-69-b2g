@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
  * click or Escape. `trigger` and `children` are render props so both the login
  * and user menus can reuse the same open/close behavior.
  */
-export default function AuthPopover({ trigger, children, align = 'right' }) {
+export default function AuthPopover({ trigger, children, align = 'right', openUp = false }) {
   const [open, setOpen] = useState(false)
   const rootRef = useRef(null)
 
@@ -34,7 +34,7 @@ export default function AuthPopover({ trigger, children, align = 'right' }) {
       {trigger({ open, toggle: () => setOpen((value) => !value), close })}
       {open ? (
         <div
-          className={`absolute top-full z-50 mt-2 ${align === 'right' ? 'right-0' : 'left-0'}`}
+          className={`absolute z-50 ${openUp ? 'bottom-full mb-2' : 'top-full mt-2'} ${align === 'right' ? 'right-0' : 'left-0'}`}
           role="menu"
         >
           {children({ close })}

@@ -35,7 +35,8 @@ export default function UserMenu({ user, variant = 'dark' }) {
 
   return (
     <AuthPopover
-      align={variant === 'light' ? 'left' : 'right'}
+      align="right"
+      openUp={variant === 'light'}
       trigger={({ toggle, open }) => (
         <button
           type="button"
@@ -51,7 +52,7 @@ export default function UserMenu({ user, variant = 'dark' }) {
       )}
     >
       {({ close }) => (
-        <div className="w-60 rounded-xl border border-gray-200 bg-white p-1.5 shadow-2xl">
+        <div className="w-56 rounded-xl border border-gray-200 bg-white p-1.5 shadow-2xl">
           <div className="flex items-center gap-2.5 px-2.5 py-2">
             <div className="flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full bg-purple-100">
               <Avatar user={user} className="h-full w-full" textClassName="text-xs font-bold text-purple-700" />
