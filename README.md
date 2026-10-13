@@ -5,7 +5,7 @@
 **Herramienta de decisión con IA para gestores públicos.**
 Cruza concentración de personas y cobertura de red (dataset Vísent CDRView) con indicadores sociales para mostrar **dónde, cómo y por qué** se concentran las desigualdades digitales — antes de que se profundicen.
 
-[**🌐 Demo en vivo**](https://s06-26-nc-equipo-69-b2g-frontend.vercel.app) · [Definición del MVP](./docs/MVP_Definicion.md) · [Casos de uso](./docs/Casos_de_Uso.md)
+[**🌐 Demo en vivo**](https://s06-26-nc-equipo-69-b2g.vercel.app) · [Definición del MVP](./docs/MVP_Definicion.md) · [Casos de uso](./docs/Casos_de_Uso.md)
 
 ![React](https://img.shields.io/badge/React_19-20232A?logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
@@ -90,7 +90,7 @@ score = 0.45 × infraestructura + 0.25 × concentración + 0.30 × vulnerabilida
 - **Concentración**: usuarios de la zona relativos a la zona más poblada
 - **Vulnerabilidad**: proporción de población de ingresos bajos (rangos C/D)
 
-Nivel de riesgo: **ALTO** ≥ 0.66 · **MEDIO** ≥ 0.33 · **BAJO** < 0.33. Metodología completa en la página [/metodologia](https://s06-26-nc-equipo-69-b2g-frontend.vercel.app/metodologia) de la app.
+Nivel de riesgo: **ALTO** ≥ 0.66 · **MEDIO** ≥ 0.33 · **BAJO** < 0.33. Metodología completa en la página [/metodologia](https://s06-26-nc-equipo-69-b2g.vercel.app/metodologia) de la app.
 
 ---
 
